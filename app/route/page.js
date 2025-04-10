@@ -2,8 +2,8 @@
 
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 const Page = () => {
   const searchParams = useSearchParams();

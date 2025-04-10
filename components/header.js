@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useUserAuth } from "../_utils/auth-context";
 
 const Header = () => {
@@ -9,9 +10,9 @@ const Header = () => {
     <header className="bg-gray-800 p-4 flex justify-between items-center text-white shadow-lg">
       {/* Logo */}
       <h1 className="text-2xl font-bold">
-        <a href="/" className="hover:text-gray-400 transition">
+        <Link href="/" className="hover:text-gray-400 transition">
           Urban Explorer
-        </a>
+        </Link>
       </h1>
 
       {/* Navigation Menu */}

@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; // Import router for navigation
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 const destinations = [
   {

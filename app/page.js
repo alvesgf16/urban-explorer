@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import Link from "next/link";
+import Image from 'next/image';
 
 const images = [
   { src: "/route.webp", alt: "Scenic Route" },
@@ -31,7 +32,7 @@ const Page = () => {
         <section className="relative h-[500px] overflow-hidden rounded-lg shadow-xl mb-12">
           {/* Sliding Background */}
           <div className="absolute inset-0 w-full h-full">
-            <img
+            <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
               className="w-full h-full object-cover brightness-75 transition-opacity duration-1000"
