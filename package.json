@@ -11,13 +11,14 @@
   "dependencies": {
     "encoding": "^0.1.13",
     "firebase": "^11.1.0",
-    "next": "15.1.0",
+    "next": "^15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "urban-explorer": "file:"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.3.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.0",
     "postcss": "^8",
