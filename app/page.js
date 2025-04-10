@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const images = [
-  { src: "/route.webp", alt: "Scenic Route" },
-  { src: "/cycling.jpg", alt: "Cycling Path" },
-  { src: "/mountain.jpg", alt: "Mountain View" },
-  { src: "/city.jpg", alt: "City Landscape" },
-  { src: "/nature.jpg", alt: "Nature Trail" },
+  { src: '/route.webp', alt: 'Scenic Route' },
+  { src: '/cycling.jpg', alt: 'Cycling Path' },
+  { src: '/mountain.jpg', alt: 'Mountain View' },
+  { src: '/city.jpg', alt: 'City Landscape' },
+  { src: '/nature.jpg', alt: 'Nature Trail' },
 ];
 
 const Page = () => {
@@ -35,6 +35,9 @@ const Page = () => {
             <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
+              width={0}
+              height={0}
+              sizes="100vw"
               className="w-full h-full object-cover brightness-75 transition-opacity duration-1000"
             />
           </div>

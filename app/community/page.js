@@ -23,7 +23,9 @@ const Community = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   const handleAddPost = () => {
-    if (newPost.trim() === "") return alert("Post content cannot be empty!");
+    if (newPost.trim() === "") {
+      return alert("Post content cannot be empty!");
+    }
 
     setPosts([{ user: "You", content: newPost }, ...posts]);
     setNewPost("");
@@ -126,7 +128,7 @@ const Community = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl font-semibold text-teal-600 mb-4">
-              {selectedPost.user}'s Post
+              {selectedPost.user}&apos;s Post
             </h2>
             <p className="text-gray-700">{selectedPost.content}</p>
             <button
